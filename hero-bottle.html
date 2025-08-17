@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>عرض منتج — ثابت شمال</title>
+  <link rel="stylesheet" href="../css/hero.css">
+</head>
+
+<body class="pv-fixed enable-sticky-footer">
+
+  <!-- ===== الهيدر ===== -->
+  <header class="hero-header">
+    <a class="hero-header-logo" href="#">
+      <img src="../images/Logo.png" alt="Logo">
+    </a>
+  </header>
+
+  <!-- ===== بانر العنوان ===== -->
+  <div class="hero-banner" role="region" aria-label="عنوان الصفحة">
+    <h2 class="hero-banner-title">
+      خلى ابنك بطل قصته… زمزمية السوبر هيرو بصورته واسمه!
+    </h2>
+  </div>
+
+
+
+  <!-- ===== المحتوى ===== -->
+  <main>
+    <section class="hero-container">
+      <div class="hero-layout">
+
+        <!-- ===== العمود الشمال: عرض المنتج (ثابت) ===== -->
+        <div class="hero-view">
+
+          <!-- عارض المنتج: صورة/فيديو + أيقونات -->
+          <div class="hero-media">
+
+            <!-- إطار الميديا -->
+            <div class="hero-media-frame">
+              <img
+                id="hero-media-main"
+                class="hero-media-image"
+                src="../images/bottel/bottel-main.png"
+                alt="Main"
+                width="1000" height="1000"
+                decoding="async" fetchpriority="high">
+              <video
+                id="hero-media-video"
+                class="hero-media-video"
+                src="../images/bottel/bottel-video.mp4"
+                controls playsinline preload="metadata"
+                style="display:none"></video>
+            </div>
+
+            <!-- أيقونات الثَمنيلز -->
+            <div class="hero-thumbs" id="hero-thumbs" role="listbox" aria-label="الصور والفيديو">
+              <img src="../images/bottel/bottel-main.png" alt="Main" width="50" height="50" loading="lazy" role="option" tabindex="0" aria-selected="false">
+              <img src="../images/bottel/bottel-1.png"   alt="1"    width="50" height="50" loading="lazy" role="option" tabindex="0" aria-selected="false">
+              <img src="../images/bottel/bottel-2.png"   alt="2"    width="50" height="50" loading="lazy" role="option" tabindex="0" aria-selected="false">
+              <img src="../images/bottel/bottel-3.png"   alt="3"    width="50" height="50" loading="lazy" role="option" tabindex="0" aria-selected="false">
+              <img src="../images/bottel/bottel-4.png"   alt="4"    width="50" height="50" loading="lazy" role="option" tabindex="0" aria-selected="false">
+              <img src="../images/bottel/bottel-5.png"   alt="5"    width="50" height="50" loading="lazy" role="option" tabindex="0" aria-selected="false">
+              <img src="../images/bottel/bottel-6.png"   alt="6"    width="50" height="50" loading="lazy" role="option" tabindex="0" aria-selected="false">
+              <video src="../images/bottel/bottel-video.mp4" muted width="50" height="50" role="option" tabindex="0" aria-selected="false"></video>
+            </div>
+
+          </div> <!-- /hero-media -->
+
+          <!-- صندوق الملخص -->
+          <div class="hero-summary" id="hero-summary">
+            <div class="hero-summary-designs">
+              <div class="hero-summary-subtitle">التصميمات المختارة</div>
+              <ul id="hero-summary-designs-list" class="hero-summary-list">
+                <li class="hero-summary-muted">لم يتم اختيار أي تصميم حتى الآن</li>
+              </ul>
+            </div>
+
+            <div class="hero-summary-inline">
+              <div class="hero-summary-mini">
+                <span class="hero-summary-label">العدد</span>
+                <span id="hero-summary-qty" class="hero-summary-value">0</span>
+              </div>
+              <div class="hero-summary-mini">
+                <span class="hero-summary-label">الإجمالي</span>
+                <span id="hero-summary-total" class="hero-summary-value">0 ج.م</span>
+              </div>
+            </div>
+          </div> <!-- /hero-summary -->
+
+          <!-- ===== الفوتر الثابت داخل العمود الشمال ===== -->
+          <footer class="hero-footer-left" role="contentinfo" aria-label="شريط تحكم يسار">
+            <div class="hero-footer-left-inner">
+              <div class="hero-footer-left-stats">
+                <span class="label">العدد:</span><strong id="left-footer-qty">0 قطعة</strong>
+                <span class="dot">•</span>
+                <span class="label">الإجمالي:</span><strong id="left-footer-total">0 ج.م</strong>
+              </div>
+
+              <div class="hero-footer-left-actions">
+                <button type="button" id="left-add" class="left-btn secondary">+ أضف تصميم</button>
+                <button type="button" id="left-confirm" class="left-btn primary">✅ أكد الطلب</button>
+              </div>
+            </div>
+          </footer>
+          <!-- ===== /الفوتر الثابت ===== -->
+
+        </div> <!-- /hero-view -->
+
+        <!-- ===== العمود اليمين: باقي الصفحة ===== -->
+        <div class="hero-right">
+                    <!-- وصف قصصي -->
+          <section class="hero-story">
+            <strong class="hero-story-title">الهيرو اللى بيحبه… باسمه وصورته</strong>
+            <div class="hero-story-body">
+              <p>بصورته واسمه هيشوف نفسه على شخصية الهيرو اللي بيحبها! اختار التصميم اللى بيحبه وبيحلم بيه — حقّق حلمه بكل سهولة.</p>
+            </div>
+          </section>
+
+          <!-- الأكورديون -->
+          <div class="hero-accordion">
+
+            <!-- 1) قصة الهيرو -->
+            <div class="hero-accordion-item">
+              <div class="hero-accordion-header" data-icon="🦸‍♂️">
+                قصة هيرو مخصوص
+                <span class="hero-accordion-arrow"></span>
+              </div>
+              <div class="hero-accordion-content">
+                <section class="hero-features-list">
+                  <strong>
+                    تخيل معايا لحظة ابنك أول ما يستلم هديته…<br>
+                    هيمسك الزمزمية، يلاقي صورته وإسمه على شخصية الهيرو اللى بيحبها.<br>
+                    اللحظة دى هتزرع جواه فرحة وثقة وحب لنفسه!<br>
+                    هيحس إنه بقى بطل حقيقى، وكل يوم هيشرب مية وهو فخور، وحاسس إنه مختلف عن كل صحابه.<br>
+                    الزمزمية دى مش مجرد حاجة للشرب… دى بداية قصة بطل جديد.<br>
+                    خليه يعيش حلمه، ويفتكر دايمًا إنه بطل قادر يحقق أى حاجة يتمناها! 🦸‍♂️🚀
+                  </strong>
+                </section>
+              </div>
+            </div>
+
+            <!-- 2) جودة المنتج -->
+            <div class="hero-accordion-item">
+              <div class="hero-accordion-header" data-icon="🏆">
+                جودة المنتج
+                <span class="hero-accordion-arrow"></span>
+              </div>
+              <div class="hero-accordion-content">
+                <section class="hero-features-list">
+                  <strong>✔ سعة 500 مل — الحجم المثالي للمدرسة والتمارين والخروجات.</strong><br>
+                  <strong>✔ هيكل ستانلس ستيل خفيف ومتين.</strong><br>
+                  <strong>✔ غطاء مانع للتسرب ومقبض سهل الحمل.</strong><br>
+                  <strong>✔ خامة آمنة وخالية من BPA وصديقة للبيئة.</strong>
+                </section>
+              </div>
+            </div>
+
+            <!-- 3) تصميم مخصوص -->
+            <div class="hero-accordion-item">
+              <div class="hero-accordion-header" data-icon="🖨️">
+                تصميم مخصوص
+                <span class="hero-accordion-arrow"></span>
+              </div>
+              <div class="hero-accordion-content">
+                <section class="hero-features-list">
+                  <strong>اختار النوع (ولد أو بنت)، وهيظهرلك كل شخصيات الهيرو، اختار الأنسب لطفلك.</strong><br>
+                  <strong>اكتب اسم الطفل 1 اللى هيظهر تحت التصميم (زى ما هتكتبه هيتطبع). <span style="color:#666">حد أقصى 12 حرف.</span></strong><br>
+                  <strong>لو عايز اسم مختلف للجهة التانية، اكتب اسم الطفل 2 (زى ما هتكتبه هيتطبع).</strong><br>
+                  <strong>ارفع صورة ابنك (وجه أمامى واضح، خلفية فاتحة، إضاءة كويسة) عشان يطلع التصميم تحفة.</strong><br>
+                  <strong>سيب أى ملاحظة أو تعديل تانى تحب تضيفه على التصميم.</strong><br>
+                  <strong>دوس حفظ… التصميم هيتضاف تلقائى فى ملخص التصميمات وتقدر تضيف أكتر من تصميم.</strong><br>
+                  <strong>تقدر تضيف تصميم بكل سهولة باستخدام زر “أضف تصميم”.</strong>
+                </section>
+              </div>
+            </div>
+
+          </div> <!-- /hero-accordion -->
+
+          <!-- الأسعار والعروض -->
+          <section class="hero-price">
+            <strong class="hero-price-title">الأسعار والعروض</strong>
+            <div class="hero-price-body">
+              <p>
+                 عدد 1 زمزمية  :  <strong>280ج للقطعة</strong><br>
+                 عدد 3 زمزميات : <strong>270ج للقطعة</strong>  (الأكثر طلب)<br>
+                 عدد 5 زمزميات : <strong>260ج للقطعة</strong> + شحن مجانًا
+              </p>
+              <p style="margin-top:6px;color:#444">
+                🎁 كيس السوبر هيرو هديه مع كل زمزمية
+              </p>
+            </div>
+          </section>
+
+          
+                      <!-- فيديو عرض المنتج  -->
+           <section class="hero-video">
+            <strong class="hero-video-title">زمزميه السوبر هيرو</strong>
+            <div class="hero-video-prv" id="hero-video-prv"  aria-label="عرض فيديو المنتج">
+              <video src="../images/bottel/bottel-video.mp4" muted></video>
+            </div>
+          </section>
+
+
+
+                    <!-- آراء العملاء -->
+          <section class="hero-review">
+            <strong class="hero-review-title">آراء أولياء الأمور</strong>
+            <div class="hero-review-slider" id="heroReviewSlider">
+              <!-- الصور تتحقن من JS -->
+            </div>
+          </section>
+          
+          <!-- شارة ضمان قصيرة -->
+          <section class="hero-design-note">
+            <div class="hero-design-note-body">
+              <p style="color:#216a4b;font-weight:bold">
+                ✅ بنبعتلك التصميم للمراجعة والتاكيد.<br>
+                ✅ فى حالة التعديل بنبعتلك برضه التصميم بعد التعديل للمراجعة والتاكيد.<br>
+                ✅ الطباعه لا تتم الا بعد المراجعة والتاكيد.<br>
+                ✅ التواصل من خلال الواتس اب او الايميل  للمراجعه والتاكيد.
+              </p>
+            </div>
+          </section>
+
+          <!-- فورم التخصيص -->
+          <div class="hero-design-card">
+            <form id="hero-design-form">
+
+              <!-- النوع -->
+              <div class="hero-form-row hero-form-gender-row">
+                <label class="hero-form-label">اختار النوع لأظهار التصميمات</label>
+              </div>
+              <div class="hero-form-radio-group">
+                <label class="hero-form-radio-label"><input type="radio" name="hero-design-gender" value="boy">ولد</label>
+                <label class="hero-form-radio-label"><input type="radio" name="hero-design-gender" value="girl">بنت</label>
+              </div>
+              <span id="hero-design-gender-error" class="hero-error" role="alert"></span>
+
+              <!-- التصميمات -->
+              <div class="hero-designs-wrap">
+                <div id="hero-designs" class="hero-designs"></div>
+              </div>
+              <div id="hero-design-selection-error" class="hero-error" role="alert" style="display:none"></div>
+
+              <!-- اسم الطفل 1 -->
+              <div class="hero-form-row">
+                <label for="hero-design-name-front" class="hero-form-label">✍️ أكتب اسم الطفل (الجانب الأول):</label>
+                <input type="text" id="hero-design-name-front" placeholder="طباعة الاسم زى ما هيتكتب بالظبط">
+                <small class="hero-error" style="color:#666">ملاحظة: اكتب الاسم بالطريقة اللى تحب يظهر بيها.</small>
+              </div>
+              <span id="hero-design-name-error" class="hero-error" role="alert"></span>
+
+              <!-- اسم الطفل 2 -->
+              <div class="hero-form-row">
+                <label for="hero-design-name-back" class="hero-form-label">✍️ أكتب اسم الطفل (الجانب الثانى):</label>
+                <input type="text" id="hero-design-name-back" placeholder="طباعة الاسم زى ما هيتكتب بالظبط">
+              </div>
+
+              <!-- رفع الصور -->
+              <div class="hero-form-row">
+                <label for="hero-design-photos" class="hero-upload-btn">ارفع صورة الطفل</label>
+                <input type="file" id="hero-design-photos" multiple accept="image/*" hidden>
+                <div id="hero-design-photos-preview"></div>
+              </div>
+              <small class="hero-error" style="color:#666666">
+                ملاحظة: صورة وجه أمامية، خلفية فاتحة، وإضاءة كويسة.
+              </small>
+              <span id="hero-design-photos-error" class="hero-error" role="alert"></span>
+              <p id="hero-design-upload-status" style="font-weight: bold; color: #444;"></p>
+
+              <!-- ملاحظات -->
+              <div class="hero-form-row">
+                <label for="hero-design-notes" class="hero-form-label">ملاحظات إضافية:</label>
+                <textarea id="hero-design-notes" placeholder="اكتب ملاحظاتك"></textarea>
+              </div>
+
+              <!-- زر الحفظ -->
+              <div class="hero-form-row" style="justify-content: flex-end; margin-top: 10px;">
+                <button type="button" id="hero-design-save-btn">💾 حفظ التصميم</button>
+              </div>
+              <div id="hero-design-save-status" style="color: #24a125; font-weight: bold; margin-top: 7px;"></div>
+            </form>
+          </div>
+
+          <!-- وصف قصصي (الشحن) -->
+          <section class="hero-ship-story">
+            <strong class="hero-ship-story-title">الشحن لباب البيت ولكل حته فى مصر</strong>
+            <div class="hero-ship-story-body">
+              <p>اطلب 5 قطع أو أكتر = شحن مجانًا.</p>
+            </div>
+          </section>
+
+          <!-- فورم الشحن -->
+          <form id="hero-shipping-form" class="hero-shipping-card" autocomplete="off">
+
+            <div>
+              <label class="hero-form-label-ship">ادخل بيانات الشحن</label>
+            </div>
+
+            <!-- 1. اسم المستلم + رقم الموبايل -->
+            <div class="hero-form-row hero-form-row-inline">
+              <label class="hero-ship-label" for="hero-ship-recipient">اسم المستلم:</label>
+              <div class="hero-ship-block">
+                <input type="text" id="hero-ship-recipient" class="hero-ship-input" autocomplete="name">
+                <span id="hero-ship-recipient-error" class="hero-error" role="alert"></span>
+              </div>
+              <label class="hero-ship-label" for="hero-ship-mobile1">رقم الموبايل:</label>
+              <div class="hero-ship-block">
+                <input type="tel" id="hero-ship-mobile1" class="hero-ship-input" autocomplete="tel">
+                <span id="hero-ship-mobile1-error" class="hero-error" role="alert"></span>
+              </div>
+            </div>
+
+            <!-- 2. رقم إضافي + تليفون أرضي -->
+            <div class="hero-form-row hero-form-row-inline">
+              <label class="hero-ship-label" for="hero-ship-mobile2">رقم إضافي:</label>
+              <div class="hero-ship-block">
+                <input type="tel" id="hero-ship-mobile2" class="hero-ship-input" autocomplete="tel-national">
+              </div>
+              <label class="hero-ship-label" for="hero-ship-landline">تليفون أرضي:</label>
+              <div class="hero-ship-block">
+                <input type="tel" id="hero-ship-landline" class="hero-ship-input" autocomplete="tel">
+              </div>
+            </div>
+
+            <!-- 3. المحافظة + السعر -->
+            <div class="hero-form-row hero-form-row-inline hero-row-shipping">
+              <label class="hero-ship-label" for="hero-ship-area">اختيار المحافظة:</label>
+              <div class="hero-ship-block" style="max-width:220px;">
+                <select id="hero-ship-area" class="hero-ship-input" autocomplete="address-level1">
+                  <option value="">-- اختر المحافظة --</option>
+                  <option value="cairo-giza">القاهرة والجيزة — 60ج — 48 ساعة</option>
+                  <option value="alex">الإسكندرية — 75ج — من 5 إلى 7 أيام</option>
+                  <option value="ismailia">الإسماعيلية — 75ج — من 5 إلى 7 أيام</option>
+                  <option value="sharqia">الشرقية — 75ج — من 5 إلى 7 أيام</option>
+                  <option value="dakahlia">الدقهلية — 75ج — من 5 إلى 7 أيام</option>
+                  <option value="beheira">البحيرة — 75ج — من 5 إلى 7 أيام</option>
+                  <option value="gharbia">الغربية — 75ج — من 5 إلى 7 أيام</option>
+                  <option value="qaliubia">القليوبية — 75ج — من 5 إلى 7 أيام</option>
+                  <option value="menoufia">المنوفية — 75ج — من 5 إلى 7 أيام</option>
+                  <option value="portsaid">بورسعيد — 75ج — من 5 إلى 7 أيام</option>
+                  <option value="damietta">دمياط — 75ج — من 5 إلى 7 أيام</option>
+                  <option value="kafrelsheikh">كفر الشيخ — 75ج — من 5 إلى 7 أيام</option>
+                  <option value="mansoura">المنصورة — 75ج — من 5 إلى 7 أيام</option>
+                  <option value="bani-suef">بني سويف — 85ج — من 7 إلى 10 أيام</option>
+                  <option value="minya">المنيا — 85ج — من 7 إلى 10 أيام</option>
+                  <option value="assiut">أسيوط — 85ج — من 7 إلى 10 أيام</option>
+                  <option value="qena">قنا — 85ج — من 7 إلى 10 أيام</option>
+                  <option value="sohag">سوهاج — 85ج — من 7 إلى 10 أيام</option>
+                  <option value="fayoum">الفيوم — 85ج — من 7 إلى 10 أيام</option>
+                  <option value="luxor">الأقصر — 120ج — من 7 إلى 12 يوم</option>
+                  <option value="aswan">أسوان — 120ج — من 7 إلى 12 يوم</option>
+                  <option value="redsea">البحر الأحمر — 120ج — من 7 إلى 12 يوم</option>
+                  <option value="matrouh">مطروح — 120ج — من 7 إلى 12 يوم</option>
+                  <option value="newvalley">الوادي الجديد — 120ج — من 7 إلى 12 يوم</option>
+                  <option value="sharm">شرم الشيخ — 120ج — من 7 إلى 12 يوم</option>
+                  <option value="ghardaqa">الغردقة — 120ج — من 7 إلى 12 يوم</option>
+                </select>
+                <span id="hero-ship-area-error" class="hero-error" role="alert"></span>
+              </div>
+              <div id="hero-ship-details" class="hero-ship-input hero-ship-result"
+                   style="max-width:300px; color:#216a4b; font-weight:bold;  font-size: 15px;"></div>
+            </div>
+
+            <!-- 4. العنوان بالكامل -->
+            <div class="hero-form-row hero-form-row-inline hero-row-address">
+              <label class="hero-ship-label" for="hero-ship-address">العنوان بالكامل:</label>
+              <div class="hero-ship-block" style="max-width:440px;">
+                <textarea id="hero-ship-address" rows="2" class="hero-ship-input" autocomplete="street-address" placeholder="رقم عمارة - اسم شارع - اسم منطقة - علامة مميزة"></textarea>
+                <span id="hero-ship-address-error" class="hero-error" role="alert"></span>
+              </div>
+            </div>
+
+            <!-- 5. ملاحظات التسليم -->
+            <div class="hero-form-row hero-form-row-inline hero-row-notes">
+              <label class="hero-ship-label" for="hero-ship-notes">ملاحظات للتسليم:</label>
+              <div class="hero-ship-block" style="max-width:440px;">
+                <textarea id="hero-ship-notes" rows="1" class="hero-ship-input" placeholder="لو عندك تفاصيل إضافية أو تعليمات للتوصيل"></textarea>
+              </div>
+            </div>
+
+            <!-- 6. زر الحفظ -->
+            <div class="hero-form-row hero-form-row-inline hero-button-row"
+                 style="justify-content: center; align-items: center; flex-direction: column; margin-top: 18px;">
+              <button type="submit" id="hero-ship-save-btn">💾 حفظ بيانات الشحن</button>
+            </div>
+            <div id="hero-ship-status"></div>
+
+          </form>
+
+          <!-- FAQ مختصر -->
+          <div class="hero-accordion1">
+            <div class="hero-accordion-item1">
+              <div class="hero-accordion-header1" data-icon="❓">
+                أسئلة متكررة
+                <span class="hero-accordion-arrow1"></span>
+              </div>
+              <div class="hero-accordion-content1">
+                <section class="hero-features-list1">
+                  <strong>هل الطباعة بتروح؟</strong><br>
+                  الطباعة بالحرق وتتحمل الغسيل بإسفنجة وصابون (بدون سكاكين/سلك).<br><br>
+                  <strong>أنهي خامة؟</strong><br>
+                  هيكل <span style="font-weight:bold">ستانلس ستيل</span> 500 مل، غطاء مانع للتسريب، خالية من BPA.<br><br>
+                  <strong>مسموح ميه سخنة؟</strong><br>
+                  لا، يفضل مشروبات باردة/فاترة فقط للحفاظ على الطباعة.<br><br>
+                  <strong>قد إيه وقت التسليم؟</strong><br>
+                  القاهرة/الجيزة: 48 ساعة. باقي المحافظات: 2–5 أيام عمل بعد تأكيد التصميم.<br><br>
+                  <strong>أقدر أعدل على التصميم؟</strong><br>
+                  أيوه — بنبعتلك التصميم للمراجعة وتقدر تطلب تعديل مجانى واحد قبل الطباعة.
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <!-- طرق الدفع -->
+          <section class="hero-payments">
+            <strong class="hero-payments-title">وسائل الدفع المتاحة</strong>
+            <div class="hero-payments-icons">
+              <img src="../images/icon/vodafone.png" alt="Vodafone Cash" style="height:64px">
+              <img src="../images/icon/instapay.png" alt="InstaPay" style="height:64px">
+            </div>
+          </section>
+
+          <!-- ===== الفوتر اليمين (نهاية العمود اليمين) ===== -->
+          <footer class="hero-footer-right" role="contentinfo" aria-label="معلومات أسفل الصفحة">
+            <div class="hero-footer-right-inner">
+              <p class="hero-footer-copy">جميع الحقوق محفوظة  © 2025 DokanForPrint </p>
+            </div>
+          </footer>
+          <!-- ===== /الفوتر اليمين ===== -->
+
+        </div> <!-- /hero-right -->
+      </div> <!-- /hero-layout -->
+    </section>
+  </main>
+
+  <!-- ===== JavaScript ===== -->
+  <script>window.BASE_IMAGES = '../images'; /* BOY_DIR='H' GIRL_DIR='S' اختياري */</script>
+  <script src="../js/hero.js" defer></script>
+</body>
+</html>
