@@ -1115,7 +1115,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!wrap) return;
 
   const TOTAL = 30;
-  const basePath = '../images/review';
+  const basePath = 'images/review';
   let currentIndex = 0;
 
   function renderBatch() {
@@ -1540,3 +1540,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
   syncBtn();
 })();
+
